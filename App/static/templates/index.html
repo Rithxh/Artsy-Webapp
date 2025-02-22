@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>CSCI 571 Assignment 2</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="static/css/style.css">
+        <script src="static/scripts/script.js"></script>
+    </head>
+    <body>
+        <div class="header">Artist Search</div>
+        <div class="content">
+            <form onsubmit="getArtistDetails(event)">
+                <div class="search-bar">
+                    <button type="submit" class="control-button"><img class="img-small" src="/static/images/search_icon.png"/></button>
+                    <input type="text" id="query" name="query" required placeholder="Please enter an artist name."/>
+                    <button type="reset" class="control-button"><img class="img-small" src="/static/images/clear_icon.png"/></button>
+                </div>
+            </form>
+            <div class="search-results-cards" id="search-results-cards" hidden>
+
+            </div>
+            <div class="artist-bio" id="artist-bio" hidden>
+
+            </div>
+            <div id="loader" hidden>
+                <img class="loader" src="/static/images/loading.gif"/>
+            </div>
+            <div class="no-results" id="no-results" hidden>
+                No results found.
+            </div>
+        </div>
+        <div class="footer"> 
+            <a href="https://artsy.net">
+                Powered by
+                <img class="img-small" src="/static/images/artsy_logo.svg"/>
+                Artsy.
+            </a>
+        </div>
+    </body>
+</html>
