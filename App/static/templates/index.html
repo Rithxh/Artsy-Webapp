@@ -11,24 +11,22 @@
     <body>
         <div class="header">Artist Search</div>
         <div class="content">
-            <form onsubmit="getArtistDetails(event)">
-                <div class="search-bar">
+            <form onsubmit="getArtistDetails(event)" class="search-bar">
                     <button type="submit" class="control-button"><img class="img-small" src="/static/images/search_icon.png"/></button>
                     <input type="text" id="query" name="query" required placeholder="Please enter an artist name."/>
                     <button type="reset" class="control-button"><img class="img-small" src="/static/images/clear_icon.png"/></button>
-                </div>
             </form>
-            <div class="search-results-cards" id="search-results-cards" hidden>
+            <div class="search-results-cards" id="search-results-cards">
 
             </div>
             <div class="artist-bio" id="artist-bio" hidden>
 
             </div>
-            <div id="loader" hidden>
-                <img class="loader" src="/static/images/loading.gif"/>
-            </div>
-            <div class="no-results" id="no-results" hidden>
+            <div class="no-results" id="no-results" style="display: none;">
                 No results found.
+            </div>
+            <div id="loader" style="display: none;">
+                <img class="loader" src="/static/images/loading.gif"/>
             </div>
         </div>
         <div class="footer"> 
